@@ -1,0 +1,1 @@
+<!-- this controls static pages -->
