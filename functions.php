@@ -2,13 +2,11 @@
 
 <?php
 
-function kiwi_theme_setup() {
+function kiwi_dynamic_titling() { // dynamic title tag
     add_theme_support( "title-tag" );
-    register_nav_menu( "primary", "Primary Header Navigation" );
-    register_nav_menu( "secondary", "Footer Navigation" );
 }
 
-add_action( "after_setup_theme", "kiwi_theme_setup" );
+add_action( "after_setup_theme", "kiwi_dynamic_titling" );
 
 function kiwi_theme_styles() {
     wp_enqueue_style( 'kiwi_css', get_template_directory_uri().'/assets/css/general.css', array(), "1.0", "all" );
