@@ -21,17 +21,21 @@
         ?>
 
         <a href="#" id="logo">
-            <img src="<?php echo $logo[0] ?>" alt="logo atenea">
+            <img src="https://espaciolaatenea.org/blog/wp-content/uploads/2020/05/Logoweb_atenea.jpg" alt="logo atenea">
         </a>
+
+        <div class="titling">
+            <div>Espacio Vecinal La Atenea</div>
+        </div>
 
         <aside>
             <div class="redes">
                 <div class="container">
                     <a href="https://twitter.com/espaciolaatenea">
-                        <img src="assets/images/tw.png" alt="twitter">
+                        <img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="twitter">
                     </a>
                     <a href="https://www.facebook.com/EspacioLaAtenea">
-                        <img src="assets/images/facebook.png" alt="facebook">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="facebook">
                     </a>
 
                 </div>
@@ -39,10 +43,10 @@
                 <div class="container">
                     <!-- aqui los enlaces a redes sociales -->
                     <a href="https://www.instagram.com/espaciolaatenea/">
-                        <img src="assets/images/instagram.png" alt="instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="instagram">
                     </a>
                     <a href="mailto:hola@espaciolaatenea.org">
-                        <img src="assets/images/email.png" alt="email">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2099/2099199.png" alt="email">
                     </a>
 
                 </div>
