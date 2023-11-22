@@ -25,7 +25,9 @@
         </a>
 
         <div class="titling">
-            <div>Espacio Vecinal La Atenea</div>
+            <div>— Espacio <div>Vecinal <div>La Atenea —</div>
+                </div>
+            </div>
         </div>
 
         <aside>
@@ -61,13 +63,13 @@
             <nav>
 
                 <?php
-                    wp_nav_menu( 
-                        array(
-                            'menu' => 'primary',
-                            'container' => false,
-                            'theme_location' => 'primary',
-                            'items_wrap' => '<div>%3$s</div>'
-                        )
-                     )
-                ?>
+                wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => false,
+                        'theme_location' => 'primary',
+                        'items_wrap' => '<div>%3$s</div>'
+                    )
+                )
+                    ?>
             </nav>

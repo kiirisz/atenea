@@ -12,6 +12,8 @@
     <h3>
         Un tema de <a href="github.com/kiirisz">Ramiro "kiwi" Ángel Vega</a>
     </h3>
+
+    <button onclick="darkMode()" id="darkmode">Toggle dark mode</button>
 </footer>
 
 </body>

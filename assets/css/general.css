@@ -1,12 +1,12 @@
 body {
   font-family: "Chivo", Helvetica, sans-serif;
   margin: 0;
-  padding: 1rem;
 }
 
 header {
   display: flex;
   color: #C40610;
+  padding: 1rem;
   width: 100%;
   height: 5rem;
 }
@@ -31,6 +31,13 @@ header .titling {
 }
 header .titling div {
   margin: auto;
+  display: flex;
+}
+header .titling div div {
+  font-weight: 500;
+}
+header .titling div div div {
+  font-weight: bold;
 }
 header aside {
   display: flex;
@@ -216,6 +223,9 @@ footer h3 a {
     color: #77090f;
   }
 }
+main {
+  margin: 2rem;
+}
 main article {
   font-weight: normal;
 }
@@ -259,6 +269,11 @@ main article {
 }
 #notfound p {
   font-weight: normal;
+}
+
+.dark-mode {
+  background-color: #181818;
+  color: white;
 }
 
 /*# sourceMappingURL=general.css.map */
