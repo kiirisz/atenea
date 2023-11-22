@@ -4,7 +4,7 @@
 
 <div class="metadata">
     <div id="article-author">Josefina Delgado</div>
-    <div id="article-time">Hace 3 meses</div>
+    <div id="article-time"><?php the_date(); ?></div>
 </div>
 
 <article>
@@ -15,7 +15,10 @@
 
 <div class="metadata">
     <div id="article-tags">
-        Etiquetas:
-
-        <a href="#">#tag1</a>
+        <?php the_tags( "Etiquetas: ", ", "); ?>
     </div>
+</div>
+
+<div id="article-comments">
+    <?php comments_template(); // get the comments!!!! intuitive ?>
+</div>

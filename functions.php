@@ -9,6 +9,16 @@ function kiwi_theme_support() { // dynamic title tag
 
 add_action( "after_setup_theme", "kiwi_theme_support" );
 
+function kiwi_menus() { // dynamic menus
+    $locations = array(
+        "primary" => "Primary",
+    );
+
+    register_nav_menus( $locations );
+}
+
+add_action( "init", "kiwi_menus" );
+
 function kiwi_theme_styles() {
     wp_enqueue_style( 'kiwi_css', get_template_directory_uri().'/assets/css/general.css', array(), "1.0", "all" );
     wp_enqueue_style( 'chivo_font', "https://fonts.googleapis.com/css?family=Chivo", array(), "1.0", "all" );

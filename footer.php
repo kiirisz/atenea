@@ -10,7 +10,7 @@
     </h2>
 
     <h3>
-        Un tema de <a href="github.com/kiirisz">Ramiro "kiwi" Angel</a>
+        Un tema de <a href="github.com/kiirisz">Ramiro "kiwi" Ángel Vega</a>
     </h3>
 </footer>
 

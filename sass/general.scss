@@ -16,12 +16,13 @@ main {
 
 // heading
 
-
 header {
     display: flex;
     color: $ateneared;
 
     width: 100%;
+    height: 5rem;
+    padding: 1rem;
 
     #logo {
         display: flex;
@@ -39,6 +40,9 @@ header {
 
     aside {
         display: flex;
+        justify-content: center;
+        align-items: center;
+
 
         margin-left: auto;
         padding-left: 1rem;
@@ -46,27 +50,35 @@ header {
 
         border-left: solid 2px $ateneared;
 
+        width: 20%;
+
         .container {
             align-self: center;
             align-items: center;
 
-            a {
+            .redes {
                 display: flex;
-                justify-content: center;
-                align-items: center;
 
-                padding: 0.5rem;
-
-                img {
-                    width: 2rem;
-
-                    filter: invert(11%) sepia(90%) saturate(5633%) hue-rotate(352deg) brightness(85%) contrast(103%);
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    padding: 0.5rem;
+    
+                    img {
+                        width: 2rem;
+    
+                        filter: invert(11%) sepia(90%) saturate(5633%) hue-rotate(352deg) brightness(85%) contrast(103%);
+                    }
+    
+                    :hover {
+                        filter: invert(16%) sepia(63%) saturate(3909%) hue-rotate(344deg) brightness(62%) contrast(106%);
+                    }
                 }
-
-                :hover {
-                    filter: invert(16%) sepia(63%) saturate(3909%) hue-rotate(344deg) brightness(62%) contrast(106%);
-                }
+    
             }
+
         }
 
     }
@@ -142,6 +154,139 @@ footer {
     }
 }
 
+// heading when page is small (for responsiveness)
+
+@media (max-aspect-ratio: 1/1) {
+
+    header {
+        display: flex;
+        color: $ateneared;
+        padding: 1rem;
+    
+        width: 100%;
+
+        a {
+            margin: auto;
+        }
+    
+        #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                width: 5rem;
+            }
+        }
+    
+        h1 {
+            width: 80%;
+        }
+    
+        aside {
+            display: flex;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            width: 50%;
+    
+            border-left: solid 2px $ateneared;
+
+            .redes {
+                margin: auto;
+                display: flex;
+
+                .container {
+                    align-self: center;
+                    align-items: center;
+    
+                    
+        
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+                        padding: 0.5rem;
+        
+                        img {
+                            width: 2rem;
+        
+                            filter: invert(11%) sepia(90%) saturate(5633%) hue-rotate(352deg) brightness(85%) contrast(103%);
+                        }
+        
+                        :hover {
+                            filter: invert(16%) sepia(63%) saturate(3909%) hue-rotate(344deg) brightness(62%) contrast(106%);
+                        }
+                    }
+                }
+    
+            }
+    
+    
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    
+        nav {
+            width: 100%;
+    
+            font-size: 1.5rem;
+            display: flex;
+            list-style-type: none;
+    
+            div {
+                height: 2rem;
+                width: 100%;
+    
+                margin-top: 10px;
+                margin-bottom: 10px;
+    
+    
+                border-right: none;
+
+                text-align: center;
+                display: flex;
+    
+                li {
+                    color: $ateneared;
+                    text-decoration: none;
+                    width: 20%;
+                }
+            }
+    
+            div:hover {
+                border-right: none;
+    
+                li {
+
+                    a {
+                        color: $ateneared;
+                        letter-spacing: initial;
+        
+                        transition: none;    
+                    }
+                }
+            }
+
+            li:hover {
+                border-bottom: solid 2px $darkateneared;
+
+                a:hover {
+                    color: $darkateneared;    
+                }
+            }
+
+            
+        }
+    }
+    
+}
+
 // article contents
 
 main {
@@ -159,6 +304,8 @@ main {
 
     color: $ateneared;
     margin-bottom: 1rem;
+
+    border-bottom: 2px solid $ateneared;
 }
 
 .metadata {
@@ -168,5 +315,34 @@ main {
 
     #article-author {
         font-weight: bold;
+    }
+}
+
+.comments-area {
+    font-weight: normal;
+
+    ol {
+        font-weight: normal;
+    }
+}
+
+// 404
+
+#notfound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    div {
+        font-size: 5rem;
+        font-weight: bold;
+        color: $ateneared;
+    }
+
+    p {
+        font-weight: normal;
     }
 }

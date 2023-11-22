@@ -11,63 +11,59 @@
 
 <body>
 
-<header>
+    <header>
 
-    <?php   // this loads the logo, dynamically
-    if (function_exists('custom_logo')) {
-        $custom_logo_id = get_theme_mod('custom_logo');
-        $logo = wp_get_attachment_image_src($custom_logo_id);
-    }
-    ?>
+        <?php   // this loads the logo, dynamically
+        if (function_exists('custom_logo')) {
+            $custom_logo_id = get_theme_mod('custom_logo');
+            $logo = wp_get_attachment_image_src($custom_logo_id);
+        }
+        ?>
 
-    <a href="#" id="logo">
-        <img src="<?php echo $logo[0]?>" alt="logo atenea">
-    </a>
+        <a href="#" id="logo">
+            <img src="<?php echo $logo[0] ?>" alt="logo atenea">
+        </a>
 
-    <aside>
-        <div class="container">
-            <a href="https://twitter.com/espaciolaatenea">
-                <img src="assets/images/tw.png" alt="twitter">
-            </a>
-            <a href="https://www.facebook.com/EspacioLaAtenea">
-                <img src="assets/images/facebook.png" alt="facebook">
-            </a>
+        <aside>
+            <div class="redes">
+                <div class="container">
+                    <a href="https://twitter.com/espaciolaatenea">
+                        <img src="assets/images/tw.png" alt="twitter">
+                    </a>
+                    <a href="https://www.facebook.com/EspacioLaAtenea">
+                        <img src="assets/images/facebook.png" alt="facebook">
+                    </a>
 
-        </div>
+                </div>
 
-        <div class="container">
-            <!-- aqui los enlaces a redes sociales -->
-            <a href="https://www.instagram.com/espaciolaatenea/">
-                <img src="assets/images/instagram.png" alt="instagram">
-            </a>
-            <a href="mailto:hola@espaciolaatenea.org">
-                <img src="assets/images/email.png" alt="email">
-            </a>
+                <div class="container">
+                    <!-- aqui los enlaces a redes sociales -->
+                    <a href="https://www.instagram.com/espaciolaatenea/">
+                        <img src="assets/images/instagram.png" alt="instagram">
+                    </a>
+                    <a href="mailto:hola@espaciolaatenea.org">
+                        <img src="assets/images/email.png" alt="email">
+                    </a>
 
-        </div>
-    </aside>
-</header>
+                </div>
 
-<main>
+            </div>
+        </aside>
+    </header>
 
-<section id="menu">
-    <nav>
-        <div>
-            <a href="#home">Inicio</a>
-        </div>
-        <div>
-            <a href="#agenda">Agenda</a>
-        </div>
+    <main>
 
-        <div>
-            <a href="#eventos">Eventos</a>
-        </div>
+        <section id="menu">
+            <nav>
 
-        <div>
-            <a href="#blog">Blog</a>
-        </div>
-
-        <div>
-            <a href="#nosotros">Nosotros</a>
-        </div>
-    </nav>
+                <?php
+                    wp_nav_menu( 
+                        array(
+                            'menu' => 'primary',
+                            'container' => false,
+                            'theme_location' => 'primary',
+                            'items_wrap' => '<div>%3$s</div>'
+                        )
+                     )
+                ?>
+            </nav>

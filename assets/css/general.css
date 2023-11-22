@@ -12,6 +12,8 @@ header {
   display: flex;
   color: #C40610;
   width: 100%;
+  height: 5rem;
+  padding: 1rem;
 }
 header #logo {
   display: flex;
@@ -26,26 +28,32 @@ header h1 {
 }
 header aside {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border-left: solid 2px #C40610;
+  width: 20%;
 }
 header aside .container {
   align-self: center;
   align-items: center;
 }
-header aside .container a {
+header aside .container .redes {
+  display: flex;
+}
+header aside .container .redes a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
 }
-header aside .container a img {
+header aside .container .redes a img {
   width: 2rem;
   filter: invert(11%) sepia(90%) saturate(5633%) hue-rotate(352deg) brightness(85%) contrast(103%);
 }
-header aside .container a :hover {
+header aside .container .redes a :hover {
   filter: invert(16%) sepia(63%) saturate(3909%) hue-rotate(344deg) brightness(62%) contrast(106%);
 }
 
@@ -103,6 +111,95 @@ footer h3 a {
   text-decoration: none;
 }
 
+@media (max-aspect-ratio: 1/1) {
+  header {
+    display: flex;
+    color: #C40610;
+    padding: 1rem;
+    width: 100%;
+  }
+  header a {
+    margin: auto;
+  }
+  header #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header #logo img {
+    width: 5rem;
+  }
+  header h1 {
+    width: 80%;
+  }
+  header aside {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+    border-left: solid 2px #C40610;
+  }
+  header aside .redes {
+    margin: auto;
+    display: flex;
+  }
+  header aside .redes .container {
+    align-self: center;
+    align-items: center;
+  }
+  header aside .redes .container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  header aside .redes .container a img {
+    width: 2rem;
+    filter: invert(11%) sepia(90%) saturate(5633%) hue-rotate(352deg) brightness(85%) contrast(103%);
+  }
+  header aside .redes .container a :hover {
+    filter: invert(16%) sepia(63%) saturate(3909%) hue-rotate(344deg) brightness(62%) contrast(106%);
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  section nav {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    list-style-type: none;
+  }
+  section nav div {
+    height: 2rem;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right: none;
+    text-align: center;
+    display: flex;
+  }
+  section nav div li {
+    color: #C40610;
+    text-decoration: none;
+    width: 20%;
+  }
+  section nav div:hover {
+    border-right: none;
+  }
+  section nav div:hover li a {
+    color: #C40610;
+    letter-spacing: initial;
+    transition: none;
+  }
+  section nav li:hover {
+    border-bottom: solid 2px #77090f;
+  }
+  section nav li:hover a:hover {
+    color: #77090f;
+  }
+}
 main {
   padding: 2rem;
 }
@@ -116,6 +213,7 @@ main article {
   font-weight: bold;
   color: #C40610;
   margin-bottom: 1rem;
+  border-bottom: 2px solid #C40610;
 }
 
 .metadata {
@@ -125,6 +223,29 @@ main article {
 }
 .metadata #article-author {
   font-weight: bold;
+}
+
+.comments-area {
+  font-weight: normal;
+}
+.comments-area ol {
+  font-weight: normal;
+}
+
+#notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+#notfound div {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #C40610;
+}
+#notfound p {
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=general.css.map */
