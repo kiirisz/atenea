@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-    <!-- menú superior -->
-    <?php get_header()?>
-
-    <main>
-
-        <section>
-            <nav>
-                <div>
-                    <a href="#home">Inicio</a>
-                </div>
-                <div>
-                    <a href="#agenda">Agenda</a>
-                </div>
-
-                <div>
-                    <a href="#eventos">Eventos</a>
-                </div>
-
-                <div>
-                    <a href="#blog">Blog</a>
-                </div>
-
-                <div>
-                    <a href="#nosotros">Nosotros</a>
-                </div>
-            </nav>
-
-            <main></main>
-        </section>
-
-    </main>
-
-    <?php get_footer()?>
+<!-- menú superior -->
+<?php get_header() ?>
 
 
-    <!-- for unbeknownst reasons the addition of wp_footer makes it so the wordpress bar appears at the top!! why it does that is beyond me -->
-    <?php wp_footer(); // this loads the as-yet-nonexistent js ?>
+<!-- behold!!!! this will contain the bulk of the website -->
+<main>
+    <?php
+        if ( have_posts() ) { // if there are posts
+            while ( have_posts() ) { // while there are posts
+                the_post(); // get the post
+                the_content(); // get the content!!!! intuitive
+            }
+        }
+    ?>
+</main>
+
+<!-- pie de página -->
+<?php get_footer() ?>
+
+
+<!-- for unbeknownst reasons the addition of wp_footer makes it so the wordpress bar appears at the top!! why it does that is beyond me -->
+<?php wp_footer(); // this loads the as-yet-nonexistent js ?>
+
 </html>

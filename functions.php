@@ -2,11 +2,12 @@
 
 <?php
 
-function kiwi_dynamic_titling() { // dynamic title tag
+function kiwi_theme_support() { // dynamic title tag
     add_theme_support( "title-tag" );
+    add_theme_support( "custom-logo" );
 }
 
-add_action( "after_setup_theme", "kiwi_dynamic_titling" );
+add_action( "after_setup_theme", "kiwi_theme_support" );
 
 function kiwi_theme_styles() {
     wp_enqueue_style( 'kiwi_css', get_template_directory_uri().'/assets/css/general.css', array(), "1.0", "all" );

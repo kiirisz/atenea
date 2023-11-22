@@ -1,5 +1,9 @@
 <!-- da footer -->
 
+</section>
+
+</main>
+
 <footer>
     <h2>
         Espacio La Atenea, 2023

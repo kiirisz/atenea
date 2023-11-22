@@ -103,4 +103,28 @@ footer h3 a {
   text-decoration: none;
 }
 
+main {
+  padding: 2rem;
+}
+main article {
+  font-weight: normal;
+}
+
+#article-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #C40610;
+  margin-bottom: 1rem;
+}
+
+.metadata {
+  color: #999999;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.metadata #article-author {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=general.css.map */

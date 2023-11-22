@@ -2,6 +2,7 @@
 
 $ateneared: #C40610;
 $darkateneared: #77090f;
+$notblack: #999999;
 
 body {
     font-family: "Chivo", Helvetica, sans-serif;
@@ -138,5 +139,34 @@ footer {
             color: white;
             text-decoration: none;
         }
+    }
+}
+
+// article contents
+
+main {
+    padding: 2rem;
+
+    article {
+        font-weight: normal;
+    }
+}
+
+#article-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+
+    color: $ateneared;
+    margin-bottom: 1rem;
+}
+
+.metadata {
+    color: $notblack;
+    font-weight: normal;
+    font-size: 0.8rem;
+
+    #article-author {
+        font-weight: bold;
     }
 }
