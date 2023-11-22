@@ -181,6 +181,14 @@ footer {
             text-decoration: none;
         }
     }
+
+    button {
+        background-image: url('https://cdn-icons-png.flaticon.com/128/8338/8338708.png');
+        background-size: cover;
+        border: none;
+        width: 1rem; // Set the width you want
+        height: 1rem; // Set the height you want
+    }
 }
 
 // heading when page is small (for responsiveness)

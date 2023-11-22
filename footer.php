@@ -13,7 +13,7 @@
         Un tema de <a href="github.com/kiirisz">Ramiro "kiwi" Ángel Vega</a>
     </h3>
 
-    <button onclick="darkMode()" id="darkmode">Toggle dark mode</button>
+    <button onclick="darkMode()" id="darkmode"></button>
 </footer>
 
 </body>

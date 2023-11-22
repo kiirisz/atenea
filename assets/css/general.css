@@ -125,6 +125,13 @@ footer h3 a {
   color: white;
   text-decoration: none;
 }
+footer button {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/8338/8338708.png");
+  background-size: cover;
+  border: none;
+  width: 1rem;
+  height: 1rem;
+}
 
 @media (max-aspect-ratio: 1/1) {
   header {
