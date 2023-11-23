@@ -10,16 +10,24 @@ body {
     margin: 0;
 }
 
+main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 // heading
 
 header {
     display: flex;
     color: $ateneared;
 
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
 
-    width: 100%;
+    flex-grow: 1;
     height: 5rem;
 
     #logo {
@@ -46,7 +54,7 @@ header {
         display: flex;
 
         font-weight: lighter;
-        font-size: 2rem;
+        font-size: 3vw;
 
         div {
             margin: auto;
@@ -166,6 +174,7 @@ footer {
     align-items: center;
 
     padding: 2rem;
+    margin-top: 2rem;
 
     h2 {
         font-size: 1rem;
@@ -198,9 +207,22 @@ footer {
     header {
         display: flex;
         color: $ateneared;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         width: 100%;
+
+        .titling {
+            display: none;
+
+            div {
+                display: none;
+
+                div {
+                    display: none;
+                }
+            }
+        }
 
         a {
             margin: auto;
@@ -210,22 +232,17 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 50%;
 
             img {
                 width: 5rem;
             }
         }
 
-        h1 {
-            width: 80%;
-        }
-
         aside {
             display: flex;
-            padding-left: 1rem;
-            padding-right: 1rem;
 
-            width: 50%;
+            flex-grow: 1;
 
             border-left: solid 2px $ateneared;
 
@@ -247,7 +264,7 @@ footer {
                         padding: 0.5rem;
 
                         img {
-                            width: 2rem;
+                            width: 6vw;
 
                             filter: invert(11%) sepia(90%) saturate(5633%) hue-rotate(352deg) brightness(85%) contrast(103%);
                         }
@@ -264,6 +281,7 @@ footer {
         }
     }
 
+
     section {
         display: flex;
         flex-direction: column;
@@ -272,7 +290,7 @@ footer {
         nav {
             width: 100%;
 
-            font-size: 1.5rem;
+            font-size: 3vw;
             display: flex;
             list-style-type: none;
 
@@ -336,8 +354,11 @@ footer {
 
 // article contents
 
-main {
-    margin: 2rem;
+#main-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    flex-grow: 1;
 
     article {
         font-weight: normal;
@@ -350,7 +371,10 @@ main {
     font-weight: bold;
 
     color: $ateneared;
+
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
 
     border-bottom: 2px solid $ateneared;
 }
@@ -372,6 +396,18 @@ main {
         font-weight: normal;
     }
 }
+
+a.readmore {
+    text-decoration: none;
+    color: $ateneared;
+
+}
+
+a.readmore:hover {
+    text-decoration: underline;
+    color: $darkateneared;
+}
+
 
 // 404
 

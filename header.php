@@ -25,7 +25,9 @@
         </a>
 
         <div class="titling">
-            <div>— Espacio <div>Vecinal <div>La Atenea —</div>
+            <div>— Espacio 
+                <div>Vecinal 
+                    <div>La Atenea —</div>
                 </div>
             </div>
         </div>

@@ -6,16 +6,18 @@
 
 
 <!-- behold!!!! this will contain the bulk of the website -->
-<main>
+<div id="main-container">
     <?php
         if ( have_posts() ) { // if there are posts
             while ( have_posts() ) { // while there are posts
+                // INFO: for some reason this displays only the contents of the page instead of the posts
+
                 the_post(); // get the post
                 the_content(); // get the content!!!! intuitive
             }
         }
     ?>
-</main>
+</div>
 
 <!-- pie de página -->
 <?php get_footer() ?>
