@@ -264,6 +264,14 @@ footer button {
   width: 100%;
   border-bottom: 2px solid #C40610;
 }
+#article-title a {
+  text-decoration: none;
+  color: #C40610;
+}
+#article-title a :hover {
+  text-decoration: underline;
+  color: #77090f;
+}
 
 .metadata {
   color: #999999;
