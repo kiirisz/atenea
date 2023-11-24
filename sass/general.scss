@@ -408,6 +408,31 @@ a.readmore:hover {
     color: $darkateneared;
 }
 
+// comments
+
+#respond {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 2px $ateneared;
+    
+}
+
+label[for="wp-comment-cookies-consent"] {
+    font-weight: normal;
+}
 
 // 404
 
