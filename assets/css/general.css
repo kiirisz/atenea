@@ -206,10 +206,16 @@ footer button {
     width: 100%;
     font-size: 3vw;
     display: flex;
+    flex-direction: row;
     list-style-type: none;
   }
   section nav div {
     display: flex;
+  }
+  section nav div ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   section nav div li {
     color: #C40610;
